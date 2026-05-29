@@ -55,6 +55,26 @@ const handleSubmit = () => {
               {{ role }}
             </span>
           </div>
+
+          <p
+            v-if="contact.workModes?.length"
+            class="mt-6 text-sm font-semibold uppercase tracking-[0.25em] text-accent"
+          >
+            Work model
+          </p>
+          <div
+            v-if="contact.workModes?.length"
+            class="mt-3 flex flex-wrap justify-center gap-3"
+          >
+            <span
+              v-for="mode in contact.workModes"
+              :key="mode"
+              class="rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-sm font-medium text-accent"
+            >
+              {{ mode }}
+            </span>
+          </div>
+
           <p class="mt-5 text-sm text-text-muted">
             Response time: <span class="font-semibold text-text">{{ contact.responseTime }}</span>
           </p>
@@ -88,6 +108,12 @@ const handleSubmit = () => {
               <div>
                 <dt class="text-text-muted">Location</dt>
                 <dd class="mt-1 text-base font-medium text-text">{{ contact.location }}</dd>
+              </div>
+              <div>
+                <dt class="text-text-muted">Work model</dt>
+                <dd class="mt-1 text-base font-medium text-text">
+                  {{ contact.workModes?.join(' · ') ?? 'Hybrid · Remote · On-site' }}
+                </dd>
               </div>
               <div>
                 <dt class="text-text-muted">Availability</dt>

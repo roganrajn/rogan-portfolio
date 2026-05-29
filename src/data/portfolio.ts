@@ -25,7 +25,7 @@ export const portfolioData: PortfolioData = {
       { icon: '🏢', value: 'Enterprise Systems', label: 'Product Domains' },
       { icon: '⚡', value: 'Vue Migration', label: 'Core Expertise' },
       { icon: '🏦', value: 'Banking + Networking', label: 'Industry Exposure' },
-      { icon: '🌍', value: 'Remote Friendly', label: 'Work Model' },
+      { icon: '🌍', value: 'Hybrid · Remote · On-site', label: 'Work Model' },
     ],
     currentlyExploring: [
       'DSA',
@@ -40,7 +40,8 @@ export const portfolioData: PortfolioData = {
       'My strength is modernizing legacy systems into scalable products — from Vue 2 → Vue 3 migrations and micro-frontend architecture to banking support platforms, networking device management, and B2B product delivery.',
     ],
     facts: [
-      { label: 'Location', value: 'Chennai, TN (Remote-friendly)' },
+      { label: 'Location', value: 'Chennai, Tamil Nadu, India' },
+      { label: 'Work Model', value: 'Hybrid · Remote · On-site' },
       { label: 'Experience', value: '8+ years' },
       { label: 'Education', value: 'BE (CSE), Anna University' },
       { label: 'Specialization', value: 'Vue.js & Frontend Architecture' },
@@ -307,39 +308,41 @@ export const portfolioData: PortfolioData = {
       name: 'Shuttle Badminton',
       description:
         'Competitive shuttle badminton — discipline, agility, and a strong competitive mindset off the clock.',
-      image: '/hobbies/badminton.svg',
+      image: '/hobbies/badminton.jpeg',
     },
     {
       id: 'hobby-2',
       name: 'Cricket',
       description: 'Following and playing cricket — strategy, teamwork, and the love of the game.',
-      image: '/hobbies/cricket.svg',
+      image: '/hobbies/cricket.jpeg',
     },
     {
       id: 'hobby-3',
       name: 'Reading Books',
       description: 'Exploring fiction, tech, and ideas that broaden perspective beyond code.',
-      image: '/hobbies/reading.svg',
+      image: '/hobbies/reading.jpeg',
     },
     {
       id: 'hobby-4',
-      name: 'Tamil Poetry Writing',
+      name: 'Tamil Poetry',
       description:
         'Writing Tamil poetry — language, rhythm, and cultural expression that fuels creativity.',
-      image: '/hobbies/tamil-poet.svg',
+      image: '/hobbies/tamil-poetry.jpeg',
     },
   ],
   contact: {
     email: 'roganinnovator@gmail.com',
     phone: '+91 8122632366',
     location: 'Chennai, Tamil Nadu, India',
-    availability: 'Open to senior frontend and Vue.js engineering roles (remote-friendly).',
+    availability:
+      'Open to senior frontend and Vue.js roles across hybrid, remote, and on-site setups.',
     responseTime: 'Within 24 hours',
     openTo: [
       'Senior Frontend Engineer Roles',
       'Vue.js Engineer Roles',
       'Full Stack Opportunities',
     ],
+    workModes: ['Hybrid', 'Remote', 'On-site'],
     resumeUrl: '/resume/Roganraj_Vue_React_FullStack_8+Exp.pdf',
   },
 }

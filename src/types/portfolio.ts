@@ -90,6 +90,7 @@ export interface ContactInfo {
   availability: string
   responseTime: string
   openTo: string[]
+  workModes?: string[]
   resumeUrl?: string
 }
 

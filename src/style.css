@@ -1,0 +1,219 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-surface: #070b14;
+  --color-surface-elevated: #0f172a;
+  --color-surface-muted: #1e293b;
+  --color-border: #334155;
+  --color-accent: #22d3ee;
+  --color-accent-soft: #0891b2;
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-text antialiased;
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(circle at 20% 0%, rgba(34, 211, 238, 0.08), transparent 28%),
+      radial-gradient(circle at 80% 10%, rgba(56, 189, 248, 0.06), transparent 24%);
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-text;
+  }
+}
+
+@layer utilities {
+  .section-container {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .glass-panel {
+    @apply rounded-2xl border border-white/10 bg-surface-elevated/70 shadow-xl shadow-black/20 backdrop-blur-xl;
+  }
+
+  .premium-card {
+    @apply rounded-2xl border border-white/10 bg-surface-elevated/60 shadow-lg shadow-black/20 backdrop-blur-md transition duration-500;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent via-sky-300 to-cyan-200 bg-clip-text text-transparent;
+  }
+
+  .mesh-glow {
+    background:
+      radial-gradient(circle at 15% 20%, rgba(34, 211, 238, 0.18), transparent 30%),
+      radial-gradient(circle at 85% 10%, rgba(59, 130, 246, 0.12), transparent 28%),
+      radial-gradient(circle at 50% 80%, rgba(14, 165, 233, 0.08), transparent 35%);
+  }
+
+  .grid-overlay {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(circle at center, black, transparent 80%);
+  }
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@keyframes scroll-indicator {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+.hero-enter {
+  animation: hero-fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-enter-delay-1 {
+  animation-delay: 0.12s;
+}
+
+.hero-enter-delay-2 {
+  animation-delay: 0.24s;
+}
+
+.hero-enter-delay-3 {
+  animation-delay: 0.36s;
+}
+
+.hero-enter-delay-4 {
+  animation-delay: 0.48s;
+}
+
+.hero-enter-delay-5 {
+  animation-delay: 0.6s;
+}
+
+.hero-enter-delay-6 {
+  animation-delay: 0.72s;
+}
+
+.hero-float {
+  animation: hero-float 6s ease-in-out infinite;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-reveal--up {
+  transform: translateY(32px);
+}
+
+.scroll-reveal--left {
+  transform: translateX(-32px);
+}
+
+.scroll-reveal--right {
+  transform: translateX(32px);
+}
+
+.scroll-reveal--scale {
+  transform: scale(0.96);
+}
+
+.scroll-reveal--visible {
+  opacity: 1;
+  transform: none;
+}
+
+.photo-frame {
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter,
+  .hero-float,
+  .scroll-reveal {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

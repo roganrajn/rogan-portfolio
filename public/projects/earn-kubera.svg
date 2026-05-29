@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <rect width="800" height="480" fill="#081018"/>
+  <rect x="24" y="24" width="752" height="432" rx="16" fill="#0F172A" stroke="#334155"/>
+  <rect x="40" y="40" width="720" height="56" rx="10" fill="#111827" stroke="#1E293B"/>
+  <rect x="56" y="58" width="140" height="12" rx="4" fill="#F59E0B"/>
+  <rect x="620" y="52" width="124" height="24" rx="8" fill="#78350F" stroke="#F59E0B" stroke-opacity="0.5"/>
+  <rect x="40" y="112" width="460" height="328" rx="12" fill="#111827" stroke="#1E293B"/>
+  <rect x="56" y="132" width="180" height="180" rx="16" fill="#1E293B" stroke="#334155"/>
+  <rect x="80" y="156" width="132" height="132" rx="12" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-opacity="0.35"/>
+  <rect x="256" y="132" width="228" height="12" rx="4" fill="#94A3B8"/>
+  <rect x="256" y="156" width="220" height="10" rx="4" fill="#475569"/>
+  <rect x="256" y="180" width="200" height="10" rx="4" fill="#475569"/>
+  <rect x="256" y="220" width="120" height="36" rx="10" fill="#78350F" stroke="#F59E0B" stroke-opacity="0.45"/>
+  <rect x="56" y="332" width="428" height="88" rx="10" fill="#0B1220" stroke="#334155"/>
+  <rect x="520" y="112" width="240" height="156" rx="12" fill="#111827" stroke="#1E293B"/>
+  <rect x="536" y="132" width="120" height="10" rx="4" fill="#94A3B8"/>
+  <rect x="536" y="152" width="192" height="8" rx="3" fill="#475569"/>
+  <rect x="536" y="168" width="176" height="8" rx="3" fill="#475569"/>
+  <rect x="520" y="284" width="240" height="156" rx="12" fill="#111827" stroke="#1E293B"/>
+  <rect x="536" y="304" width="120" height="10" rx="4" fill="#94A3B8"/>
+  <rect x="536" y="324" width="192" height="8" rx="3" fill="#475569"/>
+  <text x="40" y="468" fill="#64748B" font-family="Inter, sans-serif" font-size="16">Earn Kubera — product dashboard mockup</text>
+</svg>

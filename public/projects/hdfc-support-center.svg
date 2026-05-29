@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+  <rect width="800" height="480" fill="#081018"/>
+  <rect x="24" y="24" width="752" height="432" rx="16" fill="#0F172A" stroke="#334155"/>
+  <rect x="40" y="40" width="720" height="56" rx="10" fill="#111827" stroke="#1E293B"/>
+  <rect x="56" y="58" width="160" height="12" rx="4" fill="#818CF8"/>
+  <rect x="240" y="56" width="96" height="16" rx="6" fill="#312E81" stroke="#6366F1"/>
+  <rect x="344" y="56" width="96" height="16" rx="6" fill="#1E293B"/>
+  <rect x="448" y="56" width="96" height="16" rx="6" fill="#1E293B"/>
+  <rect x="40" y="112" width="220" height="328" rx="12" fill="#111827" stroke="#1E293B"/>
+  <rect x="56" y="132" width="120" height="10" rx="4" fill="#94A3B8"/>
+  <rect x="56" y="156" width="188" height="52" rx="8" fill="#1E293B" stroke="#334155"/>
+  <rect x="56" y="220" width="188" height="52" rx="8" fill="#1E293B" stroke="#334155"/>
+  <rect x="56" y="284" width="188" height="52" rx="8" fill="#312E81" stroke="#6366F1" stroke-opacity="0.5"/>
+  <rect x="276" y="112" width="484" height="328" rx="12" fill="#111827" stroke="#1E293B"/>
+  <rect x="292" y="132" width="180" height="12" rx="4" fill="#94A3B8"/>
+  <rect x="292" y="156" width="452" height="36" rx="8" fill="#0B1220" stroke="#334155"/>
+  <rect x="292" y="208" width="452" height="36" rx="8" fill="#0B1220" stroke="#334155"/>
+  <rect x="292" y="260" width="452" height="36" rx="8" fill="#0B1220" stroke="#334155"/>
+  <rect x="292" y="312" width="452" height="36" rx="8" fill="#0B1220" stroke="#334155"/>
+  <rect x="292" y="364" width="220" height="56" rx="10" fill="#164E63" stroke="#22D3EE" stroke-opacity="0.35"/>
+  <rect x="524" y="364" width="220" height="56" rx="10" fill="#1E293B" stroke="#334155"/>
+  <text x="40" y="468" fill="#64748B" font-family="Inter, sans-serif" font-size="16">HDFC Support Center — banking operations mockup</text>
+</svg>
